@@ -1,0 +1,24 @@
+[
+    {
+        "action": "PlayVideo",
+        "commands": [
+            "reproducir",
+            "reproduce",
+            "reproduce el video",
+            "reproducir el video",
+            "reproducir video",
+            "reproduce video"
+        ]
+    },
+    {
+        "action": "StopVideo",
+        "commands": [
+            "parar",
+            "para",
+            "parar video",
+            "para video",
+            "parar el video",
+            "para el video"
+        ]
+    }
+]

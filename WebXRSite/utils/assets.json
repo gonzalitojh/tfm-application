@@ -1,0 +1,17 @@
+{
+    "videos": [
+        {
+            "name": "video torre",
+            "path": "WebXRSite/assets/videos/TorreBujaco.mp4",
+            "condition": "TorreBujaco",
+            "pose": {
+                "type": "relative",
+                "side": "left"
+            }
+        }
+    ],
+    "images": [],
+    "audios": [],
+    "models": [],
+    "texts": []
+}

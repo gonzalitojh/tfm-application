@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author />
+      <authoring_tool>Rhinoceros 7.5.21100.3001</authoring_tool>
+      <comments>Output from Rhinoceros COLLADA Exporter</comments>
+      <copyright />
+      <source_data />
+    </contributor>
+    <created>2021-06-02T15:20:52Z</created>
+    <modified>2021-06-02T15:20:52Z</modified>
+    <unit meter="1" name="Meters" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-Perspective" name="Camera-Perspective">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov>57.449117</xfov>
+            <aspect_ratio>2.283505</aspect_ratio>
+            <znear>100.067334</znear>
+            <zfar>118.294226</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+    </camera>
+    <camera id="Camera-Top" name="Camera-Top">
+      <optics>
+        <technique_common>
+          <orthographic>
+            <xmag>1.0</xmag>
+            <aspect_ratio>2.298611</aspect_ratio>
+            <znear>20.994057</znear>
+            <zfar>31.994141</zfar>
+          </orthographic>
+        </technique_common>
+      </optics>
+    </camera>
+    <camera id="Camera-Front" name="Camera-Front">
+      <optics>
+        <technique_common>
+          <orthographic>
+            <xmag>1.0</xmag>
+            <aspect_ratio>2.314685</aspect_ratio>
+            <znear>19.153779</znear>
+            <zfar>30.153863</zfar>
+          </orthographic>
+        </technique_common>
+      </optics>
+    </camera>
+    <camera id="Camera-Right" name="Camera-Right">
+      <optics>
+        <technique_common>
+          <orthographic>
+            <xmag>1.0</xmag>
+            <aspect_ratio>2.304196</aspect_ratio>
+            <znear>27.105168</znear>
+            <zfar>38.105252</zfar>
+          </orthographic>
+        </technique_common>
+      </optics>
+    </camera>
+  </library_cameras>
+  <library_materials>
+    <material id="ae8d1317-2525-4e71-b4ea-4e22e854136d" name="Material-Custom">
+      <instance_effect url="#fx-ae8d1317-2525-4e71-b4ea-4e22e854136d" />
+    </material>
+    <material id="ebf0ef5a-7288-4ddc-b23b-f20e41c9b0c8" name="Material-Custom">
+      <instance_effect url="#fx-ebf0ef5a-7288-4ddc-b23b-f20e41c9b0c8" />
+    </material>
+    <material id="b8a60fd9-0c60-41d6-b2a1-41ed1ab60390" name="Material-Custom">
+      <instance_effect url="#fx-b8a60fd9-0c60-41d6-b2a1-41ed1ab60390" />
+    </material>
+    <material id="a1f76598-d0ac-4f96-aef9-a3d578439422" name="Material-Custom">
+      <instance_effect url="#fx-a1f76598-d0ac-4f96-aef9-a3d578439422" />
+    </material>
+    <material id="b03b7437-b126-4298-9bab-aab1974580d2" name="Material-Custom">
+      <instance_effect url="#fx-b03b7437-b126-4298-9bab-aab1974580d2" />
+    </material>
+    <material id="a718deb4-ecff-46c3-a74b-9cf472dc16fe" name="Material-Custom">
+      <instance_effect url="#fx-a718deb4-ecff-46c3-a74b-9cf472dc16fe" />
+    </material>
+  </library_materials>
+  <library_images>
+    <image id="tex-a66d980b-fef1-4ed0-94e1-e836ada67d09">
+      <init_from>Paso%202/bamboo-wood-semigloss-albedo.png</init_from>
+    </image>
+    <image id="tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c">
+      <init_from>Paso%202/bamboo-wood-semigloss-ao.png</init_from>
+    </image>
+    <image id="tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083">
+      <init_from>Paso%202/bamboo-wood-semigloss-roughness.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="fx-ae8d1317-2525-4e71-b4ea-4e22e854136d">
+      <profile_COMMON>
+        <newparam sid="surface-a66d980b-fef1-4ed0-94e1-e836ada67d09">
+          <surface type="2D">
+            <init_from>tex-a66d980b-fef1-4ed0-94e1-e836ada67d09</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a66d980b-fef1-4ed0-94e1-e836ada67d09">
+          <sampler2D>
+            <source>surface-a66d980b-fef1-4ed0-94e1-e836ada67d09</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler-a66d980b-fef1-4ed0-94e1-e836ada67d09" texcoord="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-a6c82cac-6ba1-4772-b923-61e98f5e4f8c">
+          <surface type="2D">
+            <init_from>tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a6c82cac-6ba1-4772-b923-61e98f5e4f8c">
+          <sampler2D>
+            <source>surface-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <transparent>
+              <texture texture="sampler-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" texcoord="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" />
+            </transparent>
+            <emission>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </ambient>
+            <specular>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </specular>
+            <reflective>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparency>
+              <float>1.000000</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0.000000</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-fb2e62d4-74aa-44e9-b0b5-d15763c59083">
+          <surface type="2D">
+            <init_from>tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-fb2e62d4-74aa-44e9-b0b5-d15763c59083">
+          <sampler2D>
+            <source>surface-fb2e62d4-74aa-44e9-b0b5-d15763c59083</source>
+          </sampler2D>
+        </newparam>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Rhino">
+          <appearance_hash>3557832948</appearance_hash>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="fx-ebf0ef5a-7288-4ddc-b23b-f20e41c9b0c8">
+      <profile_COMMON>
+        <newparam sid="surface-a3409186-02b0-47ec-8be4-f429ea604555">
+          <surface type="2D">
+            <init_from>tex-a66d980b-fef1-4ed0-94e1-e836ada67d09</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a3409186-02b0-47ec-8be4-f429ea604555">
+          <sampler2D>
+            <source>surface-a3409186-02b0-47ec-8be4-f429ea604555</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler-a3409186-02b0-47ec-8be4-f429ea604555" texcoord="uv-a3409186-02b0-47ec-8be4-f429ea604555" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-a5825250-bf28-4b17-9772-d68ecce1a10b">
+          <surface type="2D">
+            <init_from>tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a5825250-bf28-4b17-9772-d68ecce1a10b">
+          <sampler2D>
+            <source>surface-a5825250-bf28-4b17-9772-d68ecce1a10b</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <transparent>
+              <texture texture="sampler-a5825250-bf28-4b17-9772-d68ecce1a10b" texcoord="uv-a5825250-bf28-4b17-9772-d68ecce1a10b" />
+            </transparent>
+            <emission>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </ambient>
+            <specular>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </specular>
+            <reflective>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparency>
+              <float>1.000000</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0.000000</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-afb040b0-1e37-4980-998f-6a6ff0b6c1a2">
+          <surface type="2D">
+            <init_from>tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-afb040b0-1e37-4980-998f-6a6ff0b6c1a2">
+          <sampler2D>
+            <source>surface-afb040b0-1e37-4980-998f-6a6ff0b6c1a2</source>
+          </sampler2D>
+        </newparam>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Rhino">
+          <appearance_hash>3557832948</appearance_hash>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="fx-b8a60fd9-0c60-41d6-b2a1-41ed1ab60390">
+      <profile_COMMON>
+        <newparam sid="surface-a3da83d0-1b12-4eb4-a30c-33ffd4104428">
+          <surface type="2D">
+            <init_from>tex-a66d980b-fef1-4ed0-94e1-e836ada67d09</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a3da83d0-1b12-4eb4-a30c-33ffd4104428">
+          <sampler2D>
+            <source>surface-a3da83d0-1b12-4eb4-a30c-33ffd4104428</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler-a3da83d0-1b12-4eb4-a30c-33ffd4104428" texcoord="uv-a3da83d0-1b12-4eb4-a30c-33ffd4104428" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-a2555995-94eb-4b3f-974e-b470948b1d55">
+          <surface type="2D">
+            <init_from>tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a2555995-94eb-4b3f-974e-b470948b1d55">
+          <sampler2D>
+            <source>surface-a2555995-94eb-4b3f-974e-b470948b1d55</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <transparent>
+              <texture texture="sampler-a2555995-94eb-4b3f-974e-b470948b1d55" texcoord="uv-a2555995-94eb-4b3f-974e-b470948b1d55" />
+            </transparent>
+            <emission>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </ambient>
+            <specular>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </specular>
+            <reflective>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparency>
+              <float>1.000000</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0.000000</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-a134771c-54ac-41a9-a1f9-d0b25a5e9d21">
+          <surface type="2D">
+            <init_from>tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a134771c-54ac-41a9-a1f9-d0b25a5e9d21">
+          <sampler2D>
+            <source>surface-a134771c-54ac-41a9-a1f9-d0b25a5e9d21</source>
+          </sampler2D>
+        </newparam>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Rhino">
+          <appearance_hash>3557832948</appearance_hash>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="fx-a1f76598-d0ac-4f96-aef9-a3d578439422">
+      <profile_COMMON>
+        <newparam sid="surface-abc66adf-b6f7-48d3-9ceb-d7769b4a9b64">
+          <surface type="2D">
+            <init_from>tex-a66d980b-fef1-4ed0-94e1-e836ada67d09</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-abc66adf-b6f7-48d3-9ceb-d7769b4a9b64">
+          <sampler2D>
+            <source>surface-abc66adf-b6f7-48d3-9ceb-d7769b4a9b64</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler-abc66adf-b6f7-48d3-9ceb-d7769b4a9b64" texcoord="uv-abc66adf-b6f7-48d3-9ceb-d7769b4a9b64" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-e41c4670-b920-4357-aa88-91a5ad3598dd">
+          <surface type="2D">
+            <init_from>tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-e41c4670-b920-4357-aa88-91a5ad3598dd">
+          <sampler2D>
+            <source>surface-e41c4670-b920-4357-aa88-91a5ad3598dd</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <transparent>
+              <texture texture="sampler-e41c4670-b920-4357-aa88-91a5ad3598dd" texcoord="uv-e41c4670-b920-4357-aa88-91a5ad3598dd" />
+            </transparent>
+            <emission>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </ambient>
+            <specular>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </specular>
+            <reflective>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparency>
+              <float>1.000000</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0.000000</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-ac89cbd5-bede-4f20-a534-bb43c36f571e">
+          <surface type="2D">
+            <init_from>tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-ac89cbd5-bede-4f20-a534-bb43c36f571e">
+          <sampler2D>
+            <source>surface-ac89cbd5-bede-4f20-a534-bb43c36f571e</source>
+          </sampler2D>
+        </newparam>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Rhino">
+          <appearance_hash>3557832948</appearance_hash>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="fx-b03b7437-b126-4298-9bab-aab1974580d2">
+      <profile_COMMON>
+        <newparam sid="surface-af8ef601-4c20-470e-93c4-cccc4794fb22">
+          <surface type="2D">
+            <init_from>tex-a66d980b-fef1-4ed0-94e1-e836ada67d09</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-af8ef601-4c20-470e-93c4-cccc4794fb22">
+          <sampler2D>
+            <source>surface-af8ef601-4c20-470e-93c4-cccc4794fb22</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler-af8ef601-4c20-470e-93c4-cccc4794fb22" texcoord="uv-af8ef601-4c20-470e-93c4-cccc4794fb22" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-e4933d1c-a951-4bf9-8a2f-0c69e0dc0cfa">
+          <surface type="2D">
+            <init_from>tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-e4933d1c-a951-4bf9-8a2f-0c69e0dc0cfa">
+          <sampler2D>
+            <source>surface-e4933d1c-a951-4bf9-8a2f-0c69e0dc0cfa</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <transparent>
+              <texture texture="sampler-e4933d1c-a951-4bf9-8a2f-0c69e0dc0cfa" texcoord="uv-e4933d1c-a951-4bf9-8a2f-0c69e0dc0cfa" />
+            </transparent>
+            <emission>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </ambient>
+            <specular>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </specular>
+            <reflective>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparency>
+              <float>1.000000</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0.000000</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-a2c21352-4161-4a68-9184-71b7832c10be">
+          <surface type="2D">
+            <init_from>tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a2c21352-4161-4a68-9184-71b7832c10be">
+          <sampler2D>
+            <source>surface-a2c21352-4161-4a68-9184-71b7832c10be</source>
+          </sampler2D>
+        </newparam>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Rhino">
+          <appearance_hash>3557832948</appearance_hash>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="fx-a718deb4-ecff-46c3-a74b-9cf472dc16fe">
+      <profile_COMMON>
+        <newparam sid="surface-a350f66a-168f-4bb9-8080-0e5b4125326f">
+          <surface type="2D">
+            <init_from>tex-a66d980b-fef1-4ed0-94e1-e836ada67d09</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a350f66a-168f-4bb9-8080-0e5b4125326f">
+          <sampler2D>
+            <source>surface-a350f66a-168f-4bb9-8080-0e5b4125326f</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <diffuse>
+              <texture texture="sampler-a350f66a-168f-4bb9-8080-0e5b4125326f" texcoord="uv-a350f66a-168f-4bb9-8080-0e5b4125326f" />
+            </diffuse>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-af4e6197-c0fe-40a7-9a6c-866c6d2236f9">
+          <surface type="2D">
+            <init_from>tex-a6c82cac-6ba1-4772-b923-61e98f5e4f8c</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-af4e6197-c0fe-40a7-9a6c-866c6d2236f9">
+          <sampler2D>
+            <source>surface-af4e6197-c0fe-40a7-9a6c-866c6d2236f9</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <transparent>
+              <texture texture="sampler-af4e6197-c0fe-40a7-9a6c-866c6d2236f9" texcoord="uv-af4e6197-c0fe-40a7-9a6c-866c6d2236f9" />
+            </transparent>
+            <emission>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color>0.000000 0.000000 0.000000 1.000000</color>
+            </ambient>
+            <specular>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </specular>
+            <reflective>
+              <color>1.000000 1.000000 1.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float>1.000000</float>
+            </reflectivity>
+            <transparency>
+              <float>1.000000</float>
+            </transparency>
+            <index_of_refraction>
+              <float>0.000000</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+      <profile_COMMON>
+        <newparam sid="surface-a826ebea-9f36-440b-8722-8bbda94b6911">
+          <surface type="2D">
+            <init_from>tex-fb2e62d4-74aa-44e9-b0b5-d15763c59083</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="sampler-a826ebea-9f36-440b-8722-8bbda94b6911">
+          <sampler2D>
+            <source>surface-a826ebea-9f36-440b-8722-8bbda94b6911</source>
+          </sampler2D>
+        </newparam>
+      </profile_COMMON>
+      <extra>
+        <technique profile="Rhino">
+          <appearance_hash>3557832948</appearance_hash>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mesh-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7">
+      <mesh>
+        <source id="lib-position-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" name="position">
+          <float_array id="lib-position-array-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" count="12" digits="17" magnitude="308">-6.11111116409302 -11.840277671814 10 -6.11111116409302 -1.84027779102325 10 3.88888883590698 -11.840277671814 10 3.88888883590698 -1.84027779102325 10</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-position-array-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-normal-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" name="normal">
+          <float_array id="lib-normal-array-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" count="12">0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-normal-array-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-map1-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" name="map1">
+          <float_array id="lib-map1-array-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" count="8">0.355400 0.413039 0.355400 0.586961 0.644600 0.413039 0.644600 0.586961</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-map1-array-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="lib-vertices-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7">
+          <input semantic="POSITION" source="#lib-position-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" />
+        </vertices>
+        <triangles count="2" material="material-ae8d1317-2525-4e71-b4ea-4e22e854136d">
+          <input offset="0" semantic="VERTEX" source="#lib-vertices-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" />
+          <input offset="1" semantic="NORMAL" source="#lib-normal-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" />
+          <input offset="2" semantic="TEXCOORD" source="#lib-map1-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7" />
+          <p>3 3 3 1 1 1 0 0 0 3 3 3 0 0 0 2 2 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="Rhino">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="mesh-ab2c11c7-4116-48db-a577-85a91c3d6703">
+      <mesh>
+        <source id="lib-position-ab2c11c7-4116-48db-a577-85a91c3d6703" name="position">
+          <float_array id="lib-position-array-ab2c11c7-4116-48db-a577-85a91c3d6703" count="12" digits="17" magnitude="308">-6.11111116409302 -11.840277671814 0 -6.11111116409302 -1.84027779102325 0 3.88888883590698 -11.840277671814 0 3.88888883590698 -1.84027779102325 0</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-position-array-ab2c11c7-4116-48db-a577-85a91c3d6703" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-normal-ab2c11c7-4116-48db-a577-85a91c3d6703" name="normal">
+          <float_array id="lib-normal-array-ab2c11c7-4116-48db-a577-85a91c3d6703" count="12">0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-normal-array-ab2c11c7-4116-48db-a577-85a91c3d6703" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-map1-ab2c11c7-4116-48db-a577-85a91c3d6703" name="map1">
+          <float_array id="lib-map1-array-ab2c11c7-4116-48db-a577-85a91c3d6703" count="8">0.355400 0.413039 0.355400 0.586961 0.644600 0.413039 0.644600 0.586961</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-map1-array-ab2c11c7-4116-48db-a577-85a91c3d6703" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="lib-vertices-ab2c11c7-4116-48db-a577-85a91c3d6703">
+          <input semantic="POSITION" source="#lib-position-ab2c11c7-4116-48db-a577-85a91c3d6703" />
+        </vertices>
+        <triangles count="2" material="material-ebf0ef5a-7288-4ddc-b23b-f20e41c9b0c8">
+          <input offset="0" semantic="VERTEX" source="#lib-vertices-ab2c11c7-4116-48db-a577-85a91c3d6703" />
+          <input offset="1" semantic="NORMAL" source="#lib-normal-ab2c11c7-4116-48db-a577-85a91c3d6703" />
+          <input offset="2" semantic="TEXCOORD" source="#lib-map1-ab2c11c7-4116-48db-a577-85a91c3d6703" />
+          <p>3 3 3 2 2 2 0 0 0 3 3 3 0 0 0 1 1 1</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="Rhino">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="mesh-a94eb986-9e2a-46c9-90ff-5973a181f2fd">
+      <mesh>
+        <source id="lib-position-a94eb986-9e2a-46c9-90ff-5973a181f2fd" name="position">
+          <float_array id="lib-position-array-a94eb986-9e2a-46c9-90ff-5973a181f2fd" count="12" digits="17" magnitude="308">-6.11111116409302 -1.84027779102325 0 -6.11111116409302 -1.84027779102325 10 -6.11111116409302 -11.840277671814 0 -6.11111116409302 -11.840277671814 10</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-position-array-a94eb986-9e2a-46c9-90ff-5973a181f2fd" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-normal-a94eb986-9e2a-46c9-90ff-5973a181f2fd" name="normal">
+          <float_array id="lib-normal-array-a94eb986-9e2a-46c9-90ff-5973a181f2fd" count="12">-1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-normal-array-a94eb986-9e2a-46c9-90ff-5973a181f2fd" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-map1-a94eb986-9e2a-46c9-90ff-5973a181f2fd" name="map1">
+          <float_array id="lib-map1-array-a94eb986-9e2a-46c9-90ff-5973a181f2fd" count="8">0.000000 0.000000 0.000000 1.000000 1.000000 0.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-map1-array-a94eb986-9e2a-46c9-90ff-5973a181f2fd" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="lib-vertices-a94eb986-9e2a-46c9-90ff-5973a181f2fd">
+          <input semantic="POSITION" source="#lib-position-a94eb986-9e2a-46c9-90ff-5973a181f2fd" />
+        </vertices>
+        <triangles count="2" material="material-b8a60fd9-0c60-41d6-b2a1-41ed1ab60390">
+          <input offset="0" semantic="VERTEX" source="#lib-vertices-a94eb986-9e2a-46c9-90ff-5973a181f2fd" />
+          <input offset="1" semantic="NORMAL" source="#lib-normal-a94eb986-9e2a-46c9-90ff-5973a181f2fd" />
+          <input offset="2" semantic="TEXCOORD" source="#lib-map1-a94eb986-9e2a-46c9-90ff-5973a181f2fd" />
+          <p>3 3 3 1 1 1 0 0 0 3 3 3 0 0 0 2 2 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="Rhino">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="mesh-abd2ec7e-fd35-406b-b793-05f0173fc772">
+      <mesh>
+        <source id="lib-position-abd2ec7e-fd35-406b-b793-05f0173fc772" name="position">
+          <float_array id="lib-position-array-abd2ec7e-fd35-406b-b793-05f0173fc772" count="12" digits="17" magnitude="308">3.88888883590698 -1.84027779102325 0 3.88888883590698 -1.84027779102325 10 -6.11111116409302 -1.84027779102325 0 -6.11111116409302 -1.84027779102325 10</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-position-array-abd2ec7e-fd35-406b-b793-05f0173fc772" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-normal-abd2ec7e-fd35-406b-b793-05f0173fc772" name="normal">
+          <float_array id="lib-normal-array-abd2ec7e-fd35-406b-b793-05f0173fc772" count="12">0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-normal-array-abd2ec7e-fd35-406b-b793-05f0173fc772" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-map1-abd2ec7e-fd35-406b-b793-05f0173fc772" name="map1">
+          <float_array id="lib-map1-array-abd2ec7e-fd35-406b-b793-05f0173fc772" count="8">0.000000 0.000000 0.000000 1.000000 1.000000 0.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-map1-array-abd2ec7e-fd35-406b-b793-05f0173fc772" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="lib-vertices-abd2ec7e-fd35-406b-b793-05f0173fc772">
+          <input semantic="POSITION" source="#lib-position-abd2ec7e-fd35-406b-b793-05f0173fc772" />
+        </vertices>
+        <triangles count="2" material="material-a1f76598-d0ac-4f96-aef9-a3d578439422">
+          <input offset="0" semantic="VERTEX" source="#lib-vertices-abd2ec7e-fd35-406b-b793-05f0173fc772" />
+          <input offset="1" semantic="NORMAL" source="#lib-normal-abd2ec7e-fd35-406b-b793-05f0173fc772" />
+          <input offset="2" semantic="TEXCOORD" source="#lib-map1-abd2ec7e-fd35-406b-b793-05f0173fc772" />
+          <p>3 3 3 1 1 1 0 0 0 3 3 3 0 0 0 2 2 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="Rhino">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="mesh-ac66a4e4-53b3-41cf-9ecc-111ce7335a88">
+      <mesh>
+        <source id="lib-position-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" name="position">
+          <float_array id="lib-position-array-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" count="12" digits="17" magnitude="308">3.88888883590698 -11.840277671814 0 3.88888883590698 -11.840277671814 10 3.88888883590698 -1.84027779102325 0 3.88888883590698 -1.84027779102325 10</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-position-array-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-normal-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" name="normal">
+          <float_array id="lib-normal-array-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" count="12">1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-normal-array-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-map1-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" name="map1">
+          <float_array id="lib-map1-array-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" count="8">0.000000 0.000000 0.000000 1.000000 1.000000 0.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-map1-array-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="lib-vertices-ac66a4e4-53b3-41cf-9ecc-111ce7335a88">
+          <input semantic="POSITION" source="#lib-position-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" />
+        </vertices>
+        <triangles count="2" material="material-b03b7437-b126-4298-9bab-aab1974580d2">
+          <input offset="0" semantic="VERTEX" source="#lib-vertices-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" />
+          <input offset="1" semantic="NORMAL" source="#lib-normal-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" />
+          <input offset="2" semantic="TEXCOORD" source="#lib-map1-ac66a4e4-53b3-41cf-9ecc-111ce7335a88" />
+          <p>3 3 3 1 1 1 0 0 0 3 3 3 0 0 0 2 2 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="Rhino">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="mesh-a90e22f6-ba92-44d7-add2-202fe30c7083">
+      <mesh>
+        <source id="lib-position-a90e22f6-ba92-44d7-add2-202fe30c7083" name="position">
+          <float_array id="lib-position-array-a90e22f6-ba92-44d7-add2-202fe30c7083" count="12" digits="17" magnitude="308">-6.11111116409302 -11.840277671814 0 -6.11111116409302 -11.840277671814 10 3.88888883590698 -11.840277671814 0 3.88888883590698 -11.840277671814 10</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-position-array-a90e22f6-ba92-44d7-add2-202fe30c7083" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-normal-a90e22f6-ba92-44d7-add2-202fe30c7083" name="normal">
+          <float_array id="lib-normal-array-a90e22f6-ba92-44d7-add2-202fe30c7083" count="12">0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-normal-array-a90e22f6-ba92-44d7-add2-202fe30c7083" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="lib-map1-a90e22f6-ba92-44d7-add2-202fe30c7083" name="map1">
+          <float_array id="lib-map1-array-a90e22f6-ba92-44d7-add2-202fe30c7083" count="8">0.000000 0.000000 0.000000 1.000000 1.000000 0.000000 1.000000 1.000000</float_array>
+          <technique_common>
+            <accessor count="4" offset="0" source="#lib-map1-array-a90e22f6-ba92-44d7-add2-202fe30c7083" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="lib-vertices-a90e22f6-ba92-44d7-add2-202fe30c7083">
+          <input semantic="POSITION" source="#lib-position-a90e22f6-ba92-44d7-add2-202fe30c7083" />
+        </vertices>
+        <triangles count="2" material="material-a718deb4-ecff-46c3-a74b-9cf472dc16fe">
+          <input offset="0" semantic="VERTEX" source="#lib-vertices-a90e22f6-ba92-44d7-add2-202fe30c7083" />
+          <input offset="1" semantic="NORMAL" source="#lib-normal-a90e22f6-ba92-44d7-add2-202fe30c7083" />
+          <input offset="2" semantic="TEXCOORD" source="#lib-map1-a90e22f6-ba92-44d7-add2-202fe30c7083" />
+          <p>3 3 3 1 1 1 0 0 0 3 3 3 0 0 0 2 2 2</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="Rhino">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode">
+      <node id="View-Perspective" name="View-Perspective">
+        <matrix>-0.871208 -0.151703 0.466887 52.456841 0.490915 -0.269221 0.828567 81.709768 0.000000 0.951056 0.309020 39.692913 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_camera url="#Camera-Perspective" />
+      </node>
+      <node id="View-Top" name="View-Top">
+        <matrix>1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 31.494141 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_camera url="#Camera-Top" />
+      </node>
+      <node id="View-Front" name="View-Front">
+        <matrix>1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -1.000000 -31.494141 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_camera url="#Camera-Front" />
+      </node>
+      <node id="View-Right" name="View-Right">
+        <matrix>0.000000 0.000000 1.000000 31.494141 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_camera url="#Camera-Right" />
+      </node>
+      <node id="ae852aae-2644-41ba-8b8f-1fed40a67306" name="Brep">
+        <instance_geometry url="#mesh-a23bd685-78ac-4a0c-be0c-2b5321b1b0b7">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="material-ae8d1317-2525-4e71-b4ea-4e22e854136d" target="#ae8d1317-2525-4e71-b4ea-4e22e854136d">
+                <bind_vertex_input semantic="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-fb2e62d4-74aa-44e9-b0b5-d15763c59083" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="aba767d5-e54f-473e-8d8d-b27cd2137219" name="Brep">
+        <instance_geometry url="#mesh-ab2c11c7-4116-48db-a577-85a91c3d6703">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="material-ebf0ef5a-7288-4ddc-b23b-f20e41c9b0c8" target="#ebf0ef5a-7288-4ddc-b23b-f20e41c9b0c8">
+                <bind_vertex_input semantic="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-fb2e62d4-74aa-44e9-b0b5-d15763c59083" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="bc0a9fb5-001b-4ef4-b232-db5170b2dd55" name="Brep">
+        <instance_geometry url="#mesh-a94eb986-9e2a-46c9-90ff-5973a181f2fd">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="material-b8a60fd9-0c60-41d6-b2a1-41ed1ab60390" target="#b8a60fd9-0c60-41d6-b2a1-41ed1ab60390">
+                <bind_vertex_input semantic="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-fb2e62d4-74aa-44e9-b0b5-d15763c59083" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="a0bc2abf-0bff-4354-a12a-f2db7e5bbf96" name="Brep">
+        <instance_geometry url="#mesh-abd2ec7e-fd35-406b-b793-05f0173fc772">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="material-a1f76598-d0ac-4f96-aef9-a3d578439422" target="#a1f76598-d0ac-4f96-aef9-a3d578439422">
+                <bind_vertex_input semantic="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-fb2e62d4-74aa-44e9-b0b5-d15763c59083" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="ac63b782-36a0-48d1-83bc-5cbd4deaf015" name="Brep">
+        <instance_geometry url="#mesh-ac66a4e4-53b3-41cf-9ecc-111ce7335a88">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="material-b03b7437-b126-4298-9bab-aab1974580d2" target="#b03b7437-b126-4298-9bab-aab1974580d2">
+                <bind_vertex_input semantic="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-fb2e62d4-74aa-44e9-b0b5-d15763c59083" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="dd62a560-9433-4a16-a6df-bbd5b772a70b" name="Brep">
+        <instance_geometry url="#mesh-a90e22f6-ba92-44d7-add2-202fe30c7083">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="material-a718deb4-ecff-46c3-a74b-9cf472dc16fe" target="#a718deb4-ecff-46c3-a74b-9cf472dc16fe">
+                <bind_vertex_input semantic="uv-a66d980b-fef1-4ed0-94e1-e836ada67d09" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-a6c82cac-6ba1-4772-b923-61e98f5e4f8c" input_semantic="TEXCOORD" input_set="0" />
+                <bind_vertex_input semantic="uv-fb2e62d4-74aa-44e9-b0b5-d15763c59083" input_semantic="TEXCOORD" input_set="0" />
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode" />
+  </scene>
+</COLLADA>
