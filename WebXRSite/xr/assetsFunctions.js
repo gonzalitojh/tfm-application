@@ -11,7 +11,7 @@ const SIDE_ANGLE = Math.PI / 12; // 15º by default
 
 // Calculate a position in the scene. Calculate also a position near a point.
 export const calculatePosition = function (scene, _distance = distance, _side = side.CENTER, side_angle = SIDE_ANGLE) {
-    let ray = scene.activeCamera.getForwardRay(2); // Get ray from camera
+    let ray = scene.activeCamera.getForwardRay(_distance); // Get ray from camera
     let direction = ray.direction;
     let angle = Math.abs(Math.atan(direction.z / direction.x)); // Get angle of the direction
 
@@ -67,8 +67,8 @@ export const createImage = function (scene, name, file,
     rotation = new BABYLON.Vector3(0, 0, 0),
     direction = undefined) {
     var planeOpts = {
-        height: 1,
-        width: 2,
+        height: 0.15,
+        width: 0.25,
         sideOrientation: BABYLON.Mesh.DOUBLESIDE // Image can be watched from front and back
     };
 
@@ -83,7 +83,7 @@ export const createImage = function (scene, name, file,
     var material = new BABYLON.StandardMaterial("m", scene);
 
     // Gets file and insert on texture
-    var texture = new BABYLON.Texture("imgtex", file, scene);
+    var texture = new BABYLON.Texture(file, scene);
     material.diffuseTexture = texture; // Adds image to material
     material.specularColor = new BABYLON.Color3(0, 0, 0);
     plane.material = material; // Assign material to plane
@@ -103,6 +103,7 @@ export const createModel = function (scene, folder, file,
     position = new BABYLON.Vector3(0, 0, 0),
     rotation = new BABYLON.Vector3(0, 0, 0)) {
     BABYLON.OBJFileLoader.OPTIMIZE_WITH_UV = true;
+    let obj;
     BABYLON.SceneLoader.ImportMesh(
         undefined,
         folder,
@@ -110,16 +111,20 @@ export const createModel = function (scene, folder, file,
         scene,
         function (object) {
             console.log('Model Loaded');
+            obj = object;
             // Apply properties to object
-            for (let i = 0; i < object.length; i++) {
-                if (object[i].name == "__root__") { // Just have to apply to root mesh
-                    object[i].scaling = scale;
-                    object[i].position = position;
-                    object[i].rotation = rotation;
-                }
-            }
+            object[0].scaling = scale;
+            object[0].position = position;
+            object[0].rotation = rotation;
         }
     );
+
+    return {
+        object: obj,
+        scale: scale,
+        position: position,
+        rotation: rotation
+    };
 }
 
 // Create a text inside a box that can be scrolled
@@ -127,7 +132,11 @@ export const createText = function (scene, name, text,
     position = new BABYLON.Vector3(0, 0, 0),
     rotation = new BABYLON.Vector3(0, 0, 0),
     direction = undefined) {
-    var plane = BABYLON.Mesh.CreatePlane(name, 2, scene);
+    var planeOpts = {
+        height: 0.3,
+        width: 0.5
+    };
+    var plane = BABYLON.MeshBuilder.CreatePlane(name, planeOpts, scene);
     plane.position = position; // Sets position and direction of text
     if (direction)
         plane.setDirection(direction);
@@ -139,8 +148,8 @@ export const createText = function (scene, name, text,
     // Create a text block and some configurations
     var textBlock = new BABYLON.GUI.TextBlock();
     textBlock.textWrapping = true;
-    textBlock.width = 1;
-    textBlock.height = 1;
+    textBlock.height = 0.3;
+    textBlock.width = 0.5;
     textBlock.paddingTop = "1%";
     textBlock.paddingLeft = "1px";
     textBlock.paddingRight = "1px"
@@ -171,8 +180,8 @@ export const createVideo = function (scene, name, file,
     rotation = new BABYLON.Vector3(0, 0, 0),
     direction = undefined) {
     var planeOpts = {
-        height: 1,
-        width: 2,
+        height: 0.3,
+        width: 0.5,
         sideOrientation: BABYLON.Mesh.DOUBLESIDE // Video can be watched from front and back
     };
     // Create a plane to host video

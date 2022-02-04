@@ -1,0 +1,4 @@
+classes= 9
+train=data/custom/train_bueno.txt
+valid=data/custom/valid_bueno.txt
+names=data/custom/classes.names

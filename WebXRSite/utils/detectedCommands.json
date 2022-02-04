@@ -20,5 +20,40 @@
             "parar el video",
             "para el video"
         ]
+    },
+    {
+        "action": "StartDetect",
+        "commands": [
+            "detectar",
+            "detecta"
+        ]
+    },
+    {
+        "action": "StopDetect",
+        "commands": [
+            "parar detección",
+            "para detección"
+        ]
+    },
+    {
+        "action": "Hide",
+        "commands": [
+            "esconder",
+            "esconde"
+        ]
+    },
+    {
+        "action": "EndTutorial",
+        "commands": [
+            "terminar tutorial",
+            "termina tutorial"
+        ]
+    },
+    {
+        "action": "Tutorial",
+        "commands": [
+            "tutorial uno",
+            "tutorial dos"
+        ]
     }
 ]

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "tutorial uno",
+        "materials": [
+            "Arduino UNO",
+            "Sensor shield",
+            "Power Led",
+            "Linear potentiometer",
+            "Button",
+            "LDR sensor"
+        ],
+        "description": "Consiste en el montaje de un sistema que, por medio de un botón alterne el encendido de un LED mediante un potenciómetro o un LDR, ajustando con ellos su brillo desde 0 hasta su máximo."
+    },
+    {
+        "name":"tutorial dos",
+        "materials": [
+            "Arduino UNO",
+            "Sensor shield",
+            "Power Led",
+            "Tilt sensor",
+            "Thermistor",
+            "Accelerometer"
+        ],
+        "description": "Consiste en el montaje de un sistema para detectar la caída de un objeto por medio de acelerómetro y un sensor de inclinación. Además, también mide la temperatura."
+    }
+]

@@ -58,15 +58,17 @@ function negotiate() {
     });
 }
 
-export const detectedObjs = []
-export const recognizedCommands = []
+export const detectedObjs = [];
+export const recognizedCommands = [];
+export var video_channel;
+export var audio_channel;
 
 // Start the communication
 function start() {
     peer_conn = createPeerConnection();
 
     // Creates a datachannel for the video streaming
-    var video_channel = peer_conn.createDataChannel('video_channel');
+    video_channel = peer_conn.createDataChannel('video_channel');
     video_channel.onclose = function () {
         console.log("Video channel closed");
         video_channel.send("Video channel closed");
@@ -81,7 +83,7 @@ function start() {
     };
 
     // Creates a datachannel for the audio streaming
-    var audio_channel = peer_conn.createDataChannel('audio_channel');
+    audio_channel = peer_conn.createDataChannel('audio_channel');
     audio_channel.onclose = function () {
         console.log("Audio channel closed");
         audio_channel.send("Audio channel closed");
@@ -91,7 +93,7 @@ function start() {
         audio_channel.send("Audio channel opened");
     };
     audio_channel.onmessage = function (evt) {
-        console.log("Audio: " + evt.data);
+        // console.log("Audio: " + evt.data);
         recognizedCommands.push(evt.data); // Messages received are results from voice recognition
     };
 
@@ -100,7 +102,7 @@ function start() {
         video: {
             frameRate: 30,
             width: {
-                min: 720, ideal: 1080, max: 1440
+                min: 1080, ideal: 1440, max: 2160
             },
             aspectRatio: 1.77778 // 16:9
         },

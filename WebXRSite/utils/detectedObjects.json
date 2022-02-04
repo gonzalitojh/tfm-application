@@ -1,6 +1,38 @@
 [
     {
-        "id": "TorreBujaco",
-        "name": "Torre de Bujaco"
+        "id": "ArduinoUno",
+        "name": "Arduino UNO"
+    },
+    {
+        "id": "SensorShield",
+        "name": "Sensor shield"
+    },
+    {
+        "id": "LinearPotentiometer",
+        "name": "Linear potentiometer"
+    },
+    {
+        "id": "PowerLed",
+        "name": "Power Led"
+    },
+    {
+        "id": "Button",
+        "name": "Button"
+    },
+    {
+        "id": "TiltSensor",
+        "name": "Tilt sensor"
+    },
+    {
+        "id": "LdrSensor",
+        "name": "LDR sensor"
+    },
+    {
+        "id": "Thermistor",
+        "name": "Thermistor"
+    },
+    {
+        "id": "Accelerometer",
+        "name": "Accelerometer"
     }
 ]

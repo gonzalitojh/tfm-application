@@ -1,1 +1,9 @@
-Torre de Bujaco
+Sensor shield
+Arduino UNO
+Accelerometer
+Linear potentiometer
+Tilt sensor
+LDR sensor
+Thermistor
+Power Led
+Button

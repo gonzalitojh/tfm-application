@@ -29,7 +29,7 @@ const createScene = async function () {
     scene.registerBeforeRender(function () {
         renderFunc.detectObject(scene); // Put information for a detected element
         renderFunc.videoPausePlay(scene); // If video, play and pause it depending on were user looks
-        renderFunc.detectCommand(); // Do something for a detected command
+        renderFunc.detectCommand(scene); // Do something for a detected command
     });
 
     return scene;

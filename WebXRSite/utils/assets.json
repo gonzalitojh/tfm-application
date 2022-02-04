@@ -1,17 +1,110 @@
 {
     "videos": [
         {
-            "name": "video torre",
-            "path": "WebXRSite/assets/videos/TorreBujaco.mp4",
-            "condition": "TorreBujaco",
+            "name": "video tutorial uno",
+            "path": "WebXRSite/assets/videos/tutorial1.mp4",
+            "condition": "tutorial uno",
             "pose": {
                 "type": "relative",
+                "distance": 1,
+                "side": "center"
+            }
+        },
+        {
+            "name": "video tutorial dos",
+            "path": "WebXRSite/assets/videos/tutorial2.mp4",
+            "condition": "tutorial dos",
+            "pose": {
+                "type": "relative",
+                "distance": 0.5,
+                "side": "center"
+            }
+        }
+    ],
+    "images": [
+        {
+            "name": "imagen sensor shield",
+            "path": "WebXRSite/assets/images/sensorshield.JPEG",
+            "condition": "SensorShield",
+            "pose": {
+                "type": "relative",
+                "distance": 0.5,
                 "side": "left"
             }
         }
     ],
-    "images": [],
-    "audios": [],
-    "models": [],
-    "texts": []
+    "audios": [
+        {
+            "name": "audio arduino uno",
+            "path": "WebXRSite/assets/audios/arduino_uno.m4a",
+            "condition": "ArduinoUno"
+        },
+        {
+            "name": "audio sensor shield",
+            "path": "WebXRSite/assets/audios/sensor_shield.m4a",
+            "condition": "SensorShield"
+        },
+        {
+            "name": "audio tutorial uno",
+            "path": "WebXRSite/assets/audios/tutorial.m4a",
+            "condition": "choosing tutorial"
+        }
+    ],
+    "texts": [
+        {
+            "name": "info arduino uno",
+            "text": "Se trata de un Arduino UNO, es una placa de microcontrolador de código abierto. Para utilizarla se debe conectar el sensor shield sobre ella y a un ordenador mediante un cable USB.",
+            "condition": "ArduinoUno",
+            "pose":{
+                "type": "relative",
+                "distance": 0.2,
+                "side": "right"
+            }
+        },
+        {
+            "name": "info sensor shield",
+            "text": "Es un Sensor Shield, utilizado para conectar los diferentes sensores a la placa de microcontrolador. En la imagen se muestra el pin de la placa Arduino UNO a la que va conectada cada pin.",
+            "condition": "SensorShield",
+            "pose":{
+                "type": "relative",
+                "distance": 0.5,
+                "side": "right"
+            }
+        },
+        {
+            "name": "info tutorial uno",
+            "text": "TUTORIAL 1: Consiste en el montaje de un sistema que, por medio de un botón alterne el encendido de un LED mediante un potenciómetro o un LDR, ajustando con ellos su brillo desde 0 hasta su máximo.",
+            "condition": "choosing tutorial uno",
+            "pose": {
+                "type": "relative",
+                "distance": 0.5,
+                "side": "left",
+                "angle": 15
+            }
+        },
+        {
+            "name": "info tutorial dos",
+            "text": "TUTORIAL 2: Consiste en el montaje de un sistema para detectar la caída de un objeto por medio de acelerómetro y un sensor de inclinación. Además, también mide la temperatura.",
+            "condition": "choosing tutorial dos",
+            "pose": {
+                "type": "relative",
+                "distance": 0.5,
+                "side": "right",
+                "angle": 15
+            }
+        }
+    ],
+    "models": [
+        {
+            "name": "arduino uno",
+            "folder": "WebXRSite/assets/models/",
+            "file": "arduino.glb",
+            "condition": "ArduinoUno",
+            "pose": {
+                "type": "relative",
+                "distance": 0.2,
+                "side": "left"
+            }
+        }
+    ]
 }

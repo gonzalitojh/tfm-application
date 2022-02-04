@@ -11,7 +11,6 @@ from aiortc import RTCPeerConnection, RTCSessionDescription
 from aiortc.contrib.media import MediaBlackhole
 from ObjectDetector.deteccion_video import DetectionVideo
 from VoiceRecognizer.voice_recognizer import DetectionAudio
-from stats import periodic
 
 ROOT = os.path.dirname(__file__)
 
@@ -112,10 +111,4 @@ if __name__ == "__main__":
     app.router.add_static('/WebXRSite', "WebXRSite")
 
     # Run web app on a thread, to get concurrency
-    m = threading.Thread(target=web.run_app, kwargs={'app': app, 'access_log': None, 'port': 8080, 'ssl_context': ssl_context})
-    m.daemon = True # Stops on shutdown
-    m.start()
-
-    # Run stats gatherer async
-    asyncio.run(asyncio.sleep(3))
-    asyncio.run(periodic(peer_conns))
+    web.run_app(app=app, access_log=None, port=8080, ssl_context=ssl_context)

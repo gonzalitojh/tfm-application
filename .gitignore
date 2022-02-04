@@ -1,0 +1,9 @@
+ObjectDetector/checkpoints*
+ObjectDetector/weights/darknet53.conv.74
+ObjectDetector/weights/yolov3*
+ObjectDetector/logs
+ObjectDetector/data/custom
+VoiceRecognizer/model.tflite
+VoiceRecognizer/scorer.scorer
+WebXRSite/node_modules
+WebXRSite/assets/*
